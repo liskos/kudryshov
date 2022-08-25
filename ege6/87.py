@@ -7,6 +7,6 @@ def f(s):
 
 
 for i in range(1,999):
-    if f(i) == 51:
+    if f(i) == 57:
         print(i)
         break

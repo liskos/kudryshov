@@ -10,10 +10,4 @@ m = 0
 k = 0
 for i in range(1,999):
     if f(i) == 64:
-        m = i
-        break
-for i in range(999,1, -1):
-    if f(i) == 64:
-        m = i
-        break
-print(k + m)
+        print(i)

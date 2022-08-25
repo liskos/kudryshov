@@ -3,9 +3,9 @@ def f(s):
     while s <= 400:
         s = s + 5
         n = n + 8
-    return s
+    return n
 
-for i in range(400, 1, -1):
+for i in range(-1000, 100000):
     if f(i) > 1000:
         print(i)
-        break
+

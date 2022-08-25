@@ -5,6 +5,7 @@ def f(x):
         n = n + 3
     return n // 1000
 
-for i in range(1,999):
-    if f(i) == 361:
-        print(i)
+
+
+for i in range(223380000, 224000000):
+    print(i, f(i))
