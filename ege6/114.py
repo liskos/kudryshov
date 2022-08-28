@@ -7,7 +7,7 @@ def f(d):
     return n
 
 k = 0
-for i in range(1,999):
-    if f(i) == 1247 and f(i) // 10 == 8:
+for i in range(1,1000):
+    if f(i) == 1247 and i % 10 == 8:
         k += 1
-    print(k)
+print(k)

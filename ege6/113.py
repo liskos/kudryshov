@@ -6,7 +6,6 @@ def f(s):
     return s
 
 
-for i in range(1,999):
-    if f(i) > 99:
+for i in range(1,1000000):
+    if 999 >= f(i) > 99:
         print(i)
-        break

@@ -8,6 +8,6 @@ def f(s):
     return n
 
 for i in range(1,999):
-    if f(i) == 112:
+    if f(i) == 122:
         print(i)
         break

@@ -7,7 +7,7 @@ def f(s):
         n = n + 13
     return n
 
-for i in range(1,999):
+for i in range(1,10000):
     if f(i) == 119:
         print(i)
 

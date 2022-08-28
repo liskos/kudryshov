@@ -9,6 +9,6 @@ def f(d):
 
 k = 0
 for i in range(1, 2400 + 1):
-    if f(i) == 50 and i % 10 == 0:
+    if f(i) == 50 and i % 10 == 8:
         k = k + 1
 print(k)
