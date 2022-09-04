@@ -5,5 +5,5 @@ def f(a, b):
         return 0
     return f(a + 1, b) + f(a * 2, b)
 
-print(f(3, 20))
+print(f(3, 18)+f(3,9))
 
