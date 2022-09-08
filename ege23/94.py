@@ -1,9 +1,11 @@
 def f(a, b):
     if a == b:
         return 1
-    if a > b  :
+    if a < b  :
         return 0
-    return f(a, b - 1) + f(a, b - 3) + f(a, b % 3)
+    if a > 4 :
+        return f(a-1, b) + f(a-3, b) + f(a % 4, b)
+    return f(a-1, b) + f(a-3, b)
 
-print(f(2, 22))
+print(f(22, 2))
 

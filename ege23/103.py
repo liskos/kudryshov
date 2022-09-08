@@ -1,13 +1,10 @@
-def f(a,b):
-    k = 0
-    if a == b:
-        k += 1
-        return 1
-        return k
-    if a > b :
-        return 0
-    return f(a + 1,b) + f(a + 2,b) + f(a * 2,b)
+a = [1]
+for _ in range(6):
+    b = []
+    for x in a:
+        b.append(x + 1)
+        b.append(x + 2)
+        b.append(x * 2)
+    a = b.copy()
 
-
-print(f(1,20))
-print(k)
+print(a.count(20))
