@@ -1,8 +1,8 @@
 def f(a,b):
     if a == b:
         return 1
-    if a > b :
+    if a < b :
         return 0
-    return f(a,b - 8) + f(a,b // 2)
+    return f(a - 8,b) + f(a //2 ,b)
 
-print(f(48,102) * f(49,5))
+print(f(102,43) * f(43,5))

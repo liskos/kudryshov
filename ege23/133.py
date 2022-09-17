@@ -5,6 +5,6 @@ def f(a,b):
         return 0
     return f(a - 1,b) + f(a // 2,b)
 
-a = int('110111', 2)
-b = int('110',2)
+a = int('100001', 2)
+b = int('100',2)
 print(f(a,b))
