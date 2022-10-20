@@ -7,7 +7,7 @@ def f(n):
     return k
 
 for i in range (1,999):
-    if f(i) > 500000:
+    if f(i) > 5000000:
         print(i)
         print(f(i))
         break
