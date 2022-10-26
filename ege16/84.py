@@ -8,4 +8,6 @@ def f(n):
 
 k = 0
 for i in range(1,101):
-    print(i, f(i))
+    if f(i) > 100:
+        k += 1
+print(k)
