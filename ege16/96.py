@@ -8,4 +8,9 @@ def g(n):
     if n < 10:
         return n
     if n >= 10:
-        return g(d(n))
+        return g(f(n))
+
+s = 0
+for i in range(10,100):
+    s += g(i)
+print(s)

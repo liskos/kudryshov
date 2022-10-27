@@ -1,8 +1,8 @@
-def f(a,b):
-    if a == b:
-        return 1
-    if a > b:
-        return 0
-    return f(a + 1,b) + f(a * 2,b) + f(a ** 2,b)
+def f(n):
+    if n == 10:
+        return 1022299
+    if n > 1:
+        return n * f(n - 1) - 1
 
-print(f(5,154))
+
+print((1000*(999*(998))))
