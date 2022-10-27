@@ -1,12 +1,12 @@
 def f(n):
-    print(n)
-    if n > 10:
-        d = n%10+f(n//10)
-        return d
+    if n > 0:
+        d = n%10+f(n//10)[0]
+        return d, d
     else :
-        return 0
+        return 0, n
 
-for i in range (20,999):
-    if f(i) > 32:
-        print( 'x=', f(i))
+for i in range (1,100000):
+    a, b = f(i)
+    if b > 32:
+        print(i, a)
         break

@@ -6,3 +6,8 @@ def f(n):
     if n <= 25 :
         return f(n+2) + 3 * f(n+5)
 
+k = 0
+for i in range(1,1001):
+    if '0' not in str(f(i)) :
+        k += 1
+print(k)

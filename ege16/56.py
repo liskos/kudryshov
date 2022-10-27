@@ -8,6 +8,6 @@ def f(n):
 
 k = 0
 for i in range (1,1001):
-    if str.f(i).find('1') == False:
-        k +=1
+    if "1" not in str(f(i)):
+        k += 1
 print(k)
