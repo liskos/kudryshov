@@ -2,7 +2,7 @@ def f(n):
     global a
     if n in a :
         return a[n]
-    if n < - 100000:
+    if n < - 10:
         a[n] = 1
         return 1
     if n > 10:

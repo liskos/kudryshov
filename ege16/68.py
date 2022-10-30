@@ -9,6 +9,6 @@ def f(n):
 k = 0
 for i in range (1,999):
     print(i,f(i))
-    if 99 < f(i) < 1000 :
+    if 10000 <= f(i) < 100000 :
         k += 1
 print(k)
