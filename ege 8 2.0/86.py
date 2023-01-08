@@ -8,6 +8,6 @@ for s1 in "ВЕКНО":
                     s = s1 + s2 + s3 + s4 + s5
                     i += 1
                     if s.count("О") == 1 and s.count("Е") == 1:
-                        a.add(s)
-print(len(a))
-print(a)
+                        print(i, s)
+
+

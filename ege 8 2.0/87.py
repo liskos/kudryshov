@@ -7,7 +7,6 @@ for s1 in "ВЕКНО":
                 for s5 in "ВЕКНО":
                     s = s1 + s2 + s3 + s4 + s5
                     i += 1
-                    if s.count("Н") == 1 and s.count("К") == 1:
-                        a.add(s)
-print(len(a))
-print(a)
+                    if s.count("Н") == 2 and s.count("К") == 2:
+                        print(i,s)
+
