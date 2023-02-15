@@ -1,3 +1,4 @@
+j = 0
 for i in range (1,999):
     b = bin(i)[2:]
     if b.count("1") > b.count("0"):
@@ -7,8 +8,9 @@ for i in range (1,999):
     k = len(b)
     b = b[:k//2 - 1] + b[1 - k//2:]
     b = int(b,2)
-    if b == 55:
-        print(i)
+    if 50 <= b <= 100:
+        j += 1
+        print(i,j)
 
 
 
