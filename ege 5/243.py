@@ -14,6 +14,6 @@ def f(n):
         b = b + "0"
     return int(b,2)
 
-for i in range(1,100):
+for i in range(91,900):
     if (f(i) % 2 == 0) and (f(i) % 4 != 0):
         print(i)

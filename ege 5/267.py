@@ -1,20 +1,17 @@
 def f(n):
-    if n % 2 == 0:
-        n = n // 2
-    else :
-        n = n - 1
-    if n % 3 == 0 :
-        n = n // 3
-    else:
-        n = n - 1
-    if n % 7 == 0:
-        n = n // 7
-    else :
-        n = n - 1
-    return n
+    n2 = n
+    n = bin(n)[2:]
+    n1 = n[1:]
+    n1 = n1.replace("1","2")
+    n1 = n1.replace("0","1")
+    n1 = n1.replace("2","0")
+    n1 = "1" + n1
+    n1 = int(n1,2)
+    return n1 + n2
 
-k = 0
-for i in range(1,999):
-    if f(i) == 2:
-        k+=1
-print(k)
+
+
+
+for i in range(1,999,2):
+    if f(i) > 99:
+        print(i)
