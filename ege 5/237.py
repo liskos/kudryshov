@@ -1,6 +1,6 @@
 def f(n):
     b = bin(i)[2:]
-    if int(b,2) % 2 != 2:
+    if int(b,2) % 2 != 0:
         b = b + "0"
     else:
         b = "1" + b
