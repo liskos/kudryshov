@@ -5,7 +5,8 @@ for s1 in "1234567":
             for s4 in "01234567":
                 for s5 in "01234567":
                     f = s1 + s2 + s3 + s4 + s5
-                    if f.count("4") == 1 and ("24" not in f) and ("26" not in f) and ("46" not in f) and ("42" not in f) and ("62" not in f) and ("64" not in f):
+                    f1 = f.replace("0","h").replace("2","h").replace("4","h").replace("6","h")
+                    if f.count("4") == 1 and ("hh" not in f1):
                         k += 1
                         print(k, f)
 
