@@ -8,5 +8,5 @@ for i in range(4500):
 
 for i in range(4499):
       if a[i] + a[i + 1] >= 100 and (a[i] < 0 or a[i + 1] < 0):
-          b.append(a[i] + a[i + 1])
+          b.append(a[i] * a[i + 1])
 print(len(b),max(b))
