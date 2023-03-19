@@ -7,7 +7,7 @@ def f(a,i):
 
 
 
-for a in range(3,26):
+for a in range(3,26+1):
     s = f(a,3)
     if s[-1] == 2 and s[-2] == 2 :
         print(a)

@@ -7,9 +7,9 @@ def f(a,i):
 
 
 
-for i in range(2,37):
+for i in range(2,999):
     s = f(63,i)
-    if str(s)[-1] == "3" and str(s)[-2] == "2" :
+    if s[-1] == 3 and s[-2] == 2 :
         print(i)
 
 

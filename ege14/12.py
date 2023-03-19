@@ -6,8 +6,7 @@ def f(a,i):
     return s[::-1]
 
 
-
-for a in range(19,34):
-    s = f(a,6)
-    print(s.count(3))
-    print(s)
+s = 0
+for a in range(12,32):
+    s += f(a,5).count(1)
+print(s)

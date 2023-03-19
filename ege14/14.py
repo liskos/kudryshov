@@ -6,7 +6,7 @@ def f(a, i):
     return s[::-1]
 
 
-for i in range(12, 37):
+for i in range(2, 37):
     s = f(23, i)
-    if str(s)[-1] == "1":
+    if s[-1] == 1:
         print(i)

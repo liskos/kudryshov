@@ -2,40 +2,14 @@ import sys
 sys.stdin = open("24var14-20.txt")
 
 s = input()
-s = s.replace("21", "2 1 ")
-s = s.replace("31", "3 1")
-s = s.replace("41", "4 1")
-s = s.replace("51", "5 1")
-s = s.replace("61", "6 1")
-s = s.replace("71", "7 1")
-s = s.replace("81", "8 1")
-s = s.replace("91", "9 1")
-s = s.replace("32", "3 2")
-s = s.replace("42", "4 2")
-s = s.replace("52", "5 2")
-s = s.replace("62", "6 2")
-s = s.replace("72", "7 2")
-s = s.replace("82", "8 2")
-s = s.replace("92", "9 2")
-s = s.replace("43", "4 3")
-s = s.replace("53", "5 3")
-s = s.replace("63", "6 3")
-s = s.replace("73", "7 3")
-s = s.replace("83", "8 3")
-s = s.replace("93", "9 3")
-s = s.replace("54", "5 4")
-s = s.replace("64", "6 4")
-s = s.replace("74", "7 4")
-s = s.replace("84", "8 4")
-s = s.replace("94", "9 4")
-s = s.replace("65", "6 5")
-s = s.replace("75", "7 5")
-s = s.replace("85", "8 5")
-s = s.replace("95", "9 5")
-s = s.replace("76", "7 6")
-s = s.replace("86", "8 6")
-s = s.replace("96", "9 6")
-s = s.replace("87", "8 7")
-s = s.replace("97", "9 7")
-s = s.replace("98", "9 8")
-print(max(map(len,s.split())))
+m = 0
+t = ''
+k = 0
+for i in s:
+    if i > t:
+        k += 1
+        m = max(m,k)
+    else:
+        k = 1
+    t = i
+print(m)
