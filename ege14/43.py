@@ -7,7 +7,7 @@ def f(a,i):
 
 
 
-for a in range(5,37):
+for a in range(5,85):
     s = f(84,a)
     if s[-1] == 4 and s[-2] == 1  :
         print(a)

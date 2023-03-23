@@ -8,7 +8,7 @@ def f(a,i):
 
 
 for i in range(2,37):
-    s = f(2356,i)
+    s = f(256,i)
     if len(s) == 3 and s[-1] == 4:
         print(i)
 

@@ -7,7 +7,7 @@ def f(a,i):
 
 
 
-for a in range(6,37):
+for a in range(6,62):
     s = f(61,a)
     if s[-1] == 5 and s[-2] == 1  :
         print(a)
