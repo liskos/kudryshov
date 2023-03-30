@@ -1,7 +1,7 @@
 def func(a):
-    for x in range(1,999):
-        for y in range(1,999):
-            f = (3 * x or y < a ) or (x < y) or (16 <= x)
+    for x in range(0,999):
+        for y in range(0,999):
+            f = (3 * x + y < a ) or (x < y) or (16 <= x)
             if not f:
                 return False
     return True
