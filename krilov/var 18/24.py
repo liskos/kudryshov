@@ -6,7 +6,7 @@ m = 0
 t = ''
 k = 0
 for i in s:
-    if i > t:
+    if i <= t:
         k += 1
         m = max(m,k)
     else:
