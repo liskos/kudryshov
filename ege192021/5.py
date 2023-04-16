@@ -1,27 +1,30 @@
-a = [[""] * 200 for _ in range(200)]
-for i in range(120):
-    for j in range(120):
-        if i + j >= 57:
-            a[i][j] = "0"
-for i in range(120):
-    for j in range(120):
-        if a[i][j] == "" and (a[i+1][j] == "0" or a[i][j+1] == "0" or a[i*2][j] == "0" or a[i][j*2] == "0") :
-            a[i][j] = "1"
-for i in range(120):
-    for j in range(120):
-        if a[i][j] == "" and (a[i+1][j] == "1" and a[i][j+1] == "1" and a[i*2][j] == "1" and a[i][j*2] == "1") :
-            a[i][j] = "2"
-for i in range(120):
-    for j in range(120):
-        if a[i][j] == "" and (a[i+1][j] == "2" or a[i][j+1] == "2" or a[i*2][j] == "2" or a[i][j*2] == "2") :
-            a[i][j] = "3"
-for i in range(120):
-    for j in range(120):
-        if a[i][j] == "" and ((a[i+1][j] == "1" or a[i+1][j] == "3")  and (a[i][j+1] == "1" or a[i][j+1] == "3")
-                              and (a[i*2][j] == "1" or a[i*2][j] == "3") and (a[i][j*2] == "1" or a[i][j*2] == "3")) :
-            a[i][j] = "4"
+a = [["-1"] * 150 for i in range(150) ]
+for x in range(150):
+    for y in range(150):
+        if x + y >= 57:
+            a[x][y] = "0"
+for x in range(58):
+    for y in range(58):
+        if a[x][y] == "-1":
+            if any((a[i][j] == "0" for i,j in [(x+1,y),(x,y+1),(x*2,y),(x,y*2)])):
+                a[x][y] = "1"
+for x in range(58):
+    for y in range(58):
+        if a[x][y] == "-1":
+            if all((a[i][j] == "1" for i,j in [(x+1,y),(x,y+1),(x*2,y),(x,y*2)])):
+                a[x][y] = "2"
+for x in range(58):
+    for y in range(58):
+        if a[x][y] == "-1":
+            if any((a[i][j] == "2" for i,j in [(x+1,y),(x,y+1),(x*2,y),(x,y*2)])):
+                a[x][y] = "3"
+for x in range(58):
+    for y in range(58):
+        if a[x][y] == "-1":
+            if all((a[i][j] in "13" for i,j in [(x+1,y),(x,y+1),(x*2,y),(x,y*2)])):
+                a[x][y] = "4"
 
 
 
-for i in range(1,120):
-     print(*a[i][1::], sep="\t")
+for i in range(1,150):
+    print(*a[i][1:], sep="\t")
