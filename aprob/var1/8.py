@@ -7,7 +7,7 @@ for s1 in "АЙКОС":
                 for s5 in "АЙКОС":
                     s = s1 + s2 + s3 + s4 + s5
                     k += 1
-                    if s.count("0") <= 1 and "СС" not in s:
+                    if s.count("О") <= 1 and "СС" not in s:
                        print(s,k)
 
 
