@@ -1,7 +1,7 @@
 a = [[""] * 50 for _ in range(50)]
-for x in range(31):
-    for y in range(31):
-        if x + y <= 30:
+for x in range(33):
+    for y in range(33):
+        if x + y <= 32:
             a[x][y] = "0"
 for x in range(50):
     for y in range(50):
