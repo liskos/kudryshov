@@ -1,7 +1,7 @@
 a = [["-1"] * 200 for i in range(200) ]
 for x in range(200):
     for y in range(200):
-        if x + y >= 42:
+        if x + y >= 41:
             a[x][y] = "0"
 for x in range(43):
     for y in range(43):

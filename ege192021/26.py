@@ -6,22 +6,22 @@ for x in range(200):
 for x in range(80):
     for y in range(80):
         if a[x][y] == "-1":
-            if any((a[i][j] == "0" for i,j in [(x+1,y),(x,y+1),(x*2,y),(x,y*2)])):
+            if any((a[i][j] == "0" for i,j in [(x+3,y),(x,y+3),(x*2,y),(x,y*2)])):
                 a[x][y] = "1"
 for x in range(80):
     for y in range(80):
         if a[x][y] == "-1":
-            if all((a[i][j] == "1" for i,j in [(x+1,y),(x,y+1),(x*2,y),(x,y*2)])):
+            if all((a[i][j] == "1" for i,j in [(x+3,y),(x,y+3),(x*2,y),(x,y*2)])):
                 a[x][y] = "2"
 for x in range(80):
     for y in range(80):
         if a[x][y] == "-1":
-            if any((a[i][j] == "2" for i,j in [(x+1,y),(x,y+1),(x*2,y),(x,y*2)])):
+            if any((a[i][j] == "2" for i,j in [(x+3,y),(x,y+3),(x*2,y),(x,y*2)])):
                 a[x][y] = "3"
 for x in range(80):
     for y in range(80):
         if a[x][y] == "-1":
-            if all((a[i][j] in "13" for i,j in [(x+1,y),(x,y+1),(x*2,y),(x,y*2)])):
+            if all((a[i][j] in "13" for i,j in [(x+3,y),(x,y+3),(x*2,y),(x,y*2)])):
                 a[x][y] = "4"
 
 
