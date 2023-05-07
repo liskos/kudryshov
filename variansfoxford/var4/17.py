@@ -7,7 +7,7 @@ b = []
 for i in range(5000):
     a.append(int(input()))
 for _ in range(5000):
-    if abs(a[_]) % 2 == 0:
+    if abs(a[_]) % 10 == 2:
         m.append(a[_])
 min = min(m)
 

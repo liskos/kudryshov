@@ -9,7 +9,11 @@ def f(n):
                 s = s.replace(">3", "1>", 1)
         return s
 
-for i in range(1,100):
+for i in range(0,100):
     s = f(i)[:-1]
-    if sum(map(int,s.split())) % 17 == 0:
+    if sum(map(int, s)) % 17 == 0:
         print(i)
+print(f(15).count("3"))
+print(f(15).count("2"))
+print(f(15).count("1"))
+print("1231".split())
