@@ -10,4 +10,4 @@ for i in range(1000,9999 + 1):
     s = f(i)
     if len(s) == 6 and  ((i % 3 != 0) and (i % 17 != 0) and (i % 19 != 0)):
         k.append(i)
-print(len(k),min(k))
+print(min(k),max(k))

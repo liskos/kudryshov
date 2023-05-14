@@ -1,19 +1,13 @@
 import sys
 
 sys.stdin = open("1_17.txt")
-a = []
-p = []
-b = []
-for i in range(4403):
-    a.append(int(input()))
-for _ in range(4403):
-    if len(str(_)) == 2:
-        p.append(a[_])
-m = max(p)
 
-for i in range(4402):
-    if ((len(str(a[i])) == 2 and len(str(a[i+1])) != 2) or (len(str(a[i])) != 2 and len(str(a[i+1])) == 2)) and ((a[i] + a[i+1]) % m == 0):
-        b.append(int(a[i] + a[i+1]))
+b = []
+a = [input() for i in range(4403)]
+m = max([int(a[i]) for i in range(4403) if len(a[i]) == 2])
+b = [int(a[i]) + int(a[i+1]) for i in range(4402) if ((len(a[i]) == 2 and len(a[i+1]) != 2) or (len(a[i]) != 2 and
+                                            len(a[i+1]) == 2)) and ((int(a[i]) + int(a[i+1])) % m == 0) ]
+
 print(len(b),max(b))
 
 

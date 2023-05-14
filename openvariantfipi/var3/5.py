@@ -9,5 +9,6 @@ def f(n):
     return int(b,2)
 
 for i in range(1,100):
-    print(f(i),i)
+    if f(i) >= 76 :
+        print(i)
 

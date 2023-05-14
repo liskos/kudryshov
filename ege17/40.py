@@ -1,9 +1,9 @@
 def f(a,b):
-    s = ""
+    s = []
     while a != 0 :
-        s =  str(a%b) + s
+        s.append(a % b)
         a = a // b
-    return s
+    return s[::-1]
 
 a = []
 for i in range (1871,9197 + 1):

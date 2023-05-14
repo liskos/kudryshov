@@ -6,7 +6,7 @@ def f(a,b):
     return s
 
 a = []
-for i in range (9721,7752 + 1):
-    if sum(map(int, s)) == 3 and f(i,2)[-3:] != "000" :
+for i in range (3721,7752 + 1):
+    if sum(map(int, f(i,2))) % 3 == 0 and f(i,2)[-3:] != "000" :
         a.append(i)
-print(len(a),min  (a))
+print(len(a),min(a))
