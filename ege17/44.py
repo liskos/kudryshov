@@ -7,7 +7,7 @@ def f(a,b):
 
 
 a = []
-for i in range (3721,7752 + 1):
-    if sum(map(int, f(i,10))) % 3 == 0 and f(i,2)[-3:] != "000" :
+for i in range (3912,9193 + 1):
+    if sum(map(int, f(i,10))) % 9 == 0 and (not(i%16 == 1 and i//16%16 == 2 )) :
         a.append(i)
 print(len(a),min(a))
