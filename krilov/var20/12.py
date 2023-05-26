@@ -4,26 +4,20 @@ def f(n):
         if ">1" in s:
             s = s.replace(">1", "1>", 1)
         if ">2" in s:
-            s = s.replace(">2", "3>", 1)
+            s = s.replace(">2", ">3", 1)
         if ">3" in s:
             s = s.replace(">3", ">11", 1)
     return s[:-1]
 
-print(f(2))
-
 def prost(n):
     a = []
-    for i in range(1,n+1):
+    for i in range(1, int(n**0.5)+1):
         if n % i == 0:
-            a.append(i)
-    if len(a) != 2:
-        return False
-    return True
-
+            a.extend([i, n//i])
+    return len(set(a)) == 2
 
 
 for i in range(0, 100):
     s = f(i)
-    if prost(sum(map(int, s))) == True:
+    if prost(sum(map(int, s))):
         print(i)
-print("||||",sum(map(int,"111111111111111111111113311111111111111111111111111111111111111111111111111")))
