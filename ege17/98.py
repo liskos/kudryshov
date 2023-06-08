@@ -7,7 +7,7 @@ def f(n):
 
 
 a = []
-for i in range(333,112223+1):
+for i in range(333,11223+1):
     if (i % 16 == 11) and f(i)[0] == 12 and (i % 6 != 0):
         a.append(i)
 

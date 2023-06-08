@@ -7,7 +7,7 @@ def f(n):
 
 a = []
 for i in range(10,6000+1):
-    if len(f(i)) == 1 and  and i % 6 == 0:
+    if f(i) == {2} and i % 6 == 0:
         a.append(i)
 
 print(len(a),sum(a))
