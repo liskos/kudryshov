@@ -1,3 +1,4 @@
+for i in range (1007,746001 + 1):
 def p(n):
     s1 = str(n)[0]
     s = str(n)[1:]
