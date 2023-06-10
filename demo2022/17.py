@@ -1,9 +1,7 @@
 import sys
-sys.stdin = open('17.txt')
+sys.stdin = open('17_4705.txt')
 a = [int(input()) for i in range(5000)]
-print(a)
 m3 = max([i for i in a if i % 10 == 3])
-print(m3)
 k = 0
 m = 0
 for i in range(4999):
