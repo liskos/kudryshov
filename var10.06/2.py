@@ -4,5 +4,5 @@ for x in 0, 1:
             for w in 0, 1:
                 f = ((not x or y) or (not w == z))
                 d = ((not x or y) == (w and not z))
-                if f and d:
+                if f == d:
                     print(w,y,x,z)

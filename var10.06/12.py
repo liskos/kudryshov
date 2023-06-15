@@ -7,15 +7,12 @@ def f(n):
             s = s.replace("32", "1", 1)
         if "23" in s:
             s = s.replace("23", "2", 1)
-    return s
+    return sum(map(int, s))
 
 
-print(f(2),sum(map(int,f(2))))
-print(f(3),sum(map(int,f(3))))
-print(f(4),sum(map(int,f(3))))
-print(f(1500),sum(map(int,f(1500))))
-for i in range(1,100):
-    if sum(map(int,f(i))) == 100:
+
+for i in range(1,10000):
+    if f(i) == 100:
         print(i)
 
 
